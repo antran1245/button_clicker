@@ -8,7 +8,61 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
+        <div id="container">
+            <div id="header">
+                <header>
+                    <h1 id="title">Dojonary</h1>
+                    <input id="searchbar" placeholder="Search"/>
+                    <button id="login" onclick="changeText(this)">Login</button>
+                </header>
+            </div>
+            <div id="content">
+                <div class="col-2">
+                    <div class="card">
+                        <div class="col">
+                            <div class="card-info">
+                                <h2>ninja</h2>
+                                <p>noun</p>
+                                <p>Plural: <em>ninjas</em></p>
+                                <button class="likes" onclick="sendAlert()">
+                                    13 likes
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card-definition">
+                                <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="col">
+                            <div class="card-info">
+                                <h2>ninja</h2>
+                                <p>noun</p>
+                                <p>Plural: <em>ninjas</em></p>
+                                <button class="likes" onclick="sendAlert()">
+                                    37 likes
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card-definition">
+                                <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focuse
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="add">
+                        <p>Dojonary is defined by <strong>YOU</strong></p>
+                        <button onclick="removeElement(this)">Add Definition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
